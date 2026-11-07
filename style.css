@@ -1,0 +1,300 @@
+:root {
+    --purple-deep: #4a154b;
+    --purple-soft: #9c6ade;
+    --pink-vintage: #e91e63;
+    --pink-pastel: #fce4ec;
+    --lilac-pastel: #f3e5f5;
+    --cream-bg: #fff9fb;
+    --text-main: #3d2c3e;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--cream-bg);
+    color: var(--text-main);
+    padding-top: 76px;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-vintage {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar Retro Pastel */
+.navbar-vintage {
+    background: rgba(255, 249, 251, 0.94);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #f8bbd0;
+}
+
+.navbar-vintage .navbar-brand {
+    color: var(--purple-deep);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.45rem;
+}
+
+.navbar-vintage .nav-link {
+    color: var(--purple-deep);
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.navbar-vintage .nav-link:hover {
+    color: var(--pink-vintage);
+}
+
+.btn-whatsapp-nav {
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 6px 16px;
+}
+
+.btn-whatsapp-nav:hover {
+    background-color: #1ebe57;
+    color: #fff;
+}
+
+/* Hero Split Layout (2 Columnas) */
+.hero-split {
+    background: linear-gradient(135deg, var(--pink-pastel) 0%, var(--lilac-pastel) 60%, #e1bee7 100%);
+    padding: 70px 0;
+    border-bottom: 3px dashed #ce93d8;
+    position: relative;
+}
+
+.hero-badge {
+    background-color: #ffffff;
+    color: var(--purple-deep);
+    border: 1px solid #f48fb1;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.btn-vintage-cta {
+    background: linear-gradient(135deg, var(--purple-deep), var(--pink-vintage));
+    color: #ffffff;
+    border: none;
+    border-radius: 35px;
+    padding: 14px 32px;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-vintage-cta:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(233, 30, 99, 0.3);
+}
+
+.oval-frame-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 14px;
+    background: #ffffff;
+    border-radius: 50% / 45%;
+    border: 4px dashed var(--purple-soft);
+    box-shadow: 0 15px 35px rgba(74, 21, 75, 0.18);
+}
+
+.oval-hero-img {
+    width: 340px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50% / 45%;
+    display: block;
+}
+
+.floating-pet-badge {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background: #ffffff;
+    border: 3px solid var(--pink-vintage);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--purple-deep);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    animation: floatPet 4s infinite ease-in-out;
+}
+
+.pet-top { top: 15px; left: -10px; }
+.pet-bottom { bottom: 20px; right: -10px; animation-delay: 1.5s; }
+
+@keyframes floatPet {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Sección Servicios - Estilo Revista Vintage */
+.section-heading {
+    color: var(--purple-deep);
+    font-weight: 700;
+}
+
+.service-magazine-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #f8bbd0;
+    box-shadow: 0 6px 20px rgba(74, 21, 75, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-magazine-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(74, 21, 75, 0.16);
+}
+
+.service-magazine-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-icon-pill {
+    width: 56px;
+    height: 56px;
+    background: var(--lilac-pastel);
+    color: var(--purple-deep);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin: -28px auto 12px;
+    border: 3px solid #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+/* Sección Equipo Médico */
+.doctor-card {
+    background: linear-gradient(180deg, #ffffff 0%, #fdf2f8 100%);
+    border: 2px solid #e1bee7;
+    border-radius: 20px;
+    padding: 28px 20px;
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-6px);
+}
+
+.doctor-avatar {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--pink-vintage);
+    padding: 3px;
+    background: #ffffff;
+}
+
+/* Sección Testimonios (Carrusel 10 clientes con latido y borde arcoíris) */
+.testimonial-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px 14px;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.heartbeat-avatar {
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f48fb1;
+    animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.1); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.1); }
+    70% { transform: scale(1); }
+}
+
+.rainbow-card-1 { border: 3px solid #e91e63; }
+.rainbow-card-2 { border: 3px solid #ff9800; }
+.rainbow-card-3 { border: 3px solid #26a69a; }
+.rainbow-card-4 { border: 3px solid #8e24aa; }
+
+.carousel-btn-outside {
+    width: 44px;
+    height: 44px;
+    background-color: var(--purple-deep);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.92;
+}
+
+.carousel-btn-outside:hover {
+    background-color: var(--pink-vintage);
+}
+
+.prev-out { left: -30px; }
+.next-out { right: -30px; }
+
+@media (max-width: 991px) {
+    .prev-out { left: 4px; }
+    .next-out { right: 4px; }
+    .oval-hero-img { width: 270px; height: 320px; }
+}
+
+/* Sección Contacto Unificada */
+.contact-unified-card {
+    background: #ffffff;
+    border-radius: 24px;
+    border: 2px solid #f8bbd0;
+    box-shadow: 0 12px 32px rgba(74, 21, 75, 0.1);
+    overflow: hidden;
+}
+
+.contact-info-panel {
+    background: linear-gradient(135deg, var(--purple-deep), #7b1fa2);
+    color: #ffffff;
+    padding: 36px;
+}
+
+/* Footer Personalizado Génesis Caba */
+.footer-vintage {
+    background: linear-gradient(135deg, #3a0d3b 0%, #6a1b5d 100%);
+    color: #ffffff;
+    padding: 55px 0 30px;
+}
+
+.genesis-avatar {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f8bbd0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    margin-bottom: 16px;
+}
+
+.social-link-vintage {
+    color: #ffffff;
+    font-size: 1.65rem;
+    margin: 0 14px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.social-link-vintage:hover {
+    color: #f8bbd0;
+    transform: translateY(-4px);
+}
