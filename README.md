@@ -18,15 +18,10 @@ script.js: Implementé la lógica de interacción para el desplazamiento suave (
 README.md Ficha técnica y resumen del repositorio para el control de versiones.
 
 
- 2. Vista Previa Local con Live Server (Visual Studio Code)
-Antes de publicar la página en la red, realicé las pruebas locales en mi entorno de desarrollo utilizando Visual Studio Code
-1. Apertura del espacio de trabajo: Abrí Visual Studio Code, seleccioné Archivo > Abrir carpeta y elegí el directorio del proyecto donde tengo almacenados `index.html`, `style.css`, `script.js` y la carpeta `assets/`.
-2. Instalación de la extensión: Me aseguré de contar con la herramienta Live Server(desarrollada por Ritwick Dey) desde la sección de extensiones de VS Code.
-3. Ejecución del servidor: Hice clic derecho sobre el archivo index.html y seleccioné "Open with Live Server" (o utilicé el botón "Go Live" en la barra inferior).
-4. Visualización en tiempo real: El navegador abrió de forma automática la ruta local (http://127.0.0.1:5500/index.html), permitiéndome visualizar cada cambio guardado instantáneamente.
 
 
-3. Subir el Proyecto a GitHub (Paso a Paso Visual)
+
+2. Subir el Proyecto a GitHub (Paso a Paso Visual)
 Para respaldar mi código en la nube de forma visual y prepararlo para producción, seguí estos pasos:
 1. Accedí a [github.com](https://github.com/) con mi cuenta.
 2. Hice clic en el botón New para crear un repositorio nuevo.
@@ -47,7 +42,14 @@ Para respaldar mi código en la nube de forma visual y prepararlo para producci�
 <img width="586" height="329" alt="image" src="https://github.com/user-attachments/assets/9b8e7adf-e57d-4790-9864-e58818a05d9f" />
 
 
-4. Desplegar la Página en Vercel
+
+<img width="1169" height="654" alt="image" src="https://github.com/user-attachments/assets/1c617bf9-a3ee-4bf3-9d84-6c668b8612bd" />
+
+
+
+
+
+3. Desplegar la Página en Vercel
 Para poner a web en línea de forma gratuita:
 1. Entré a [vercel.com](https://vercel.com/) y accedí utilizando mis credenciales de GitHub.
 2. En mi panel de control (Dashboard), hice clic en"Add New
